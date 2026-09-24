@@ -5,9 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "quilt-mesh-bridge"
 version = "0.1.0"
-description = "Bridges cellular Quilt cells over a mesh network"
+description = "Bridge Quilt cells across networks via a forwarding mesh."
 requires-python = ">=3.9"
 license = { text = "MIT" }
+dependencies = ["websockets>=11"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
